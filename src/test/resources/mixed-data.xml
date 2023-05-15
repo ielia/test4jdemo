@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite verbose="0" name="lala" parallel="tests" thread-count="1">
+    <!--
+    <test
+            name="lala"
+            preserve-order="true"
+            enabled="true">
+        <classes>
+            <class name="com.ielia.test.test4jdemo.ShitTest"></class>
+        </classes>
+    </test>
+    -->
+    <test
+            name="lala-English"
+            preserve-order="true"
+            enabled="true">
+        <parameter name="Language" value="English"/>
+        <classes>
+            <class name="com.ielia.test.test4jdemo.ShitTest"></class>
+        </classes>
+    </test>
+    <test
+            name="lala-Italiano"
+            preserve-order="true"
+            enabled="true">
+        <parameter name="Language" value="Italiano"/>
+        <classes>
+            <class name="com.ielia.test.test4jdemo.ShitTest"></class>
+        </classes>
+    </test>
+    <test
+            name="lala-Latin"
+            preserve-order="true"
+            enabled="true">
+        <parameter name="Language" value="Latin"/>
+        <classes>
+            <class name="com.ielia.test.test4jdemo.ShitTest"></class>
+        </classes>
+    </test>
+</suite>
